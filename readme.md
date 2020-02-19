@@ -14,10 +14,10 @@ In the data folder there are 5 `.csv` files. Details about each below.
 
 ## Figure 3
 
-`scd_RAL_data_final.csv` is the data for the F1 males from crosses between a panel of different wild type strains and the progenitor $scd^1$ strain. The script Figure3_plot_RAL.R uses this data to reproduce figure 3. The data columns for this can be interpreted as follows:
+`scd_RAL_data_final.csv` is the data for the F1 males from crosses between a panel of different wild type strains and the progenitor *scd[1]* strain. The script Figure3_plot_RAL.R uses this data to reproduce figure 3. The data columns for this can be interpreted as follows:
 
 genotype - The strain used for the male parent (females always were scd strain so male F1 would be hemizygous for the allele).
-5070 Is the progenitor strain (y[1] scd[1] ras[1] v[1] f[1]).
+5070 Is the progenitor strain (*y[1] scd[1] ras[1] v[1] f[1]*).
 ORE and SAM are two standard lab wild types (Oregon-R and Samarkand). The ORE_WT and SAM_WT were pure lines (not crossed to 5070). All RAL* (where * is the number for the RAL line) represent sequenced DGRP strains used as a panel for genetic variation. FVW (FennVille Winery) is a large natural outbred population collected in Fennville Michigan.
 
 slide_date - Date of dissections.
