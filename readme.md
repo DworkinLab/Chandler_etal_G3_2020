@@ -13,12 +13,12 @@ In the data folder there are 5 `.csv` files.
 2. scd_RAL_data_final.csv is the data for the F1 males from crosses between a panel of different wild type strains and the progenitor $scd^1$ strain. The script Figure3_plot_RAL.R uses this data to reproduce figure 3. The data columns for this can be interpreted as follows:
 
 genotype - The strain used for the male parent (females always were scd strain so male F1 would be hemizygous for the allele).
-5070 Is the progenitor strain (y[1] scd[1] ras[1] v[1] f[1])
-ORE and SAM are two standard lab wild types (Oregon-R and Samarkand). The ORE_WT and SAM_WT were pure lines (not crossed to 5070). All RAL* represent sequenced DGRP strains used as a panel for genetic variation. FVW (FennVille Winery) is a large natural outbred population collected in Fennville Michigan.
+5070 Is the progenitor strain (y[1] scd[1] ras[1] v[1] f[1]).
+ORE and SAM are two standard lab wild types (Oregon-R and Samarkand). The ORE_WT and SAM_WT were pure lines (not crossed to 5070). All RAL* (where * is the number for the RAL line) represent sequenced DGRP strains used as a panel for genetic variation. FVW (FennVille Winery) is a large natural outbred population collected in Fennville Michigan.
 
-slide_date - Date of dissections
+slide_date - Date of dissections.
 
-t1_teeth - count of sex comb teeth for normal sex comb on tarsal segment 1 (basi-tarsus)
+t1_teeth - count of sex comb teeth for normal sex comb on tarsal segment 1 (basi-tarsus).
 
 t1_gaps - Number of gaps observed in primary sex comb.
 
@@ -28,6 +28,7 @@ t1_extra_comb - Presence of a secondary sex comb on T1 (basi-tarsus).
 
 t2_teeth - Number of sex comb teeth on the additional sex comb.
  that commonly occurs in scd[1] individuals on T2 (second tarsal segments).
+
 
 3. compensation_4_30.csv Data for allele purging experiment for the scd[1] allele, this data is analyzed in the script Figure4_plot_fitness.R for Figure 4. Columns for the data are as follows:
 
@@ -41,6 +42,7 @@ wt - number of wild type males observed.
 
 unsure - individuals who may have been either scd[1] or wild type (scd[+]).
 
+
 4. sex_comb_data_uptogen24.csv contains the data for the compensatory evolution experiment. The script analyzing this experiment is Figure5_plot_main_EE.R reproducing figure 5. Please also note that the simulations for power analyses are also included in this script (supplemental figures).
 
 Variables in this data set are:
@@ -49,9 +51,9 @@ rep - replicate lineage (NOT the same lineages as for the purging experiment).
 
 treatment - experimental treatments for the evolution experiment (LV - low genetic variation, HSS - high sexual selection, LSS - low sexual selection, WTC - control lineages for lab domestication that are wild type for scd).
 
-gen - generation
+gen - generation.
 
-id - individual
+id - individual.
 
 leg - left or right leg.
 
