@@ -1,4 +1,11 @@
 
+library(lme4)
+library(MCMCpack)
+library(lattice)
+library(plotrix)
+								
+
+
 
 scd.data <- read.csv('../data/scd_RAL_data_final.csv', na.strings="NA")
 scd.data <- na.omit(scd.data)
@@ -33,7 +40,6 @@ pchisq(chi2, df=length(penetrance.model$coefficients)-1, lower.tail=F)
 
 #Will want to re-do this using mle2 or a Bayesian model, and then plot confidence intervals for the parameter estimates
 
-library(lme4)
 
 background.model <- glmer(ectopic_present ~ 1 + (1|genotype), family = "binomial", data=penetrance.data)
 
@@ -47,8 +53,6 @@ null.model <- glm(ectopic_present ~ 1, family="binomial", data=penetrance.data)
 
 ###########
 #Fit confidence intervals individually
-
-library(MCMCpack)
 
 penetrance.data.tabulated$estimate <- rep(0, 18)
 penetrance.data.tabulated$ci.min <- rep(0,18)
@@ -91,7 +95,6 @@ for (i in 1:18) {
 	penetrance.data.tabulated$p.est[i] <- penetrance.data.tabulated[i,2] / penetrance.data.tabulated[i,3]
 }
 
-library(plotrix)
 penetrance.data.tabulated <- penetrance.data.tabulated[order(penetrance.data.tabulated$p.est),]
 penetrance.data.tabulated$genotype <- as.factor(as.character(penetrance.data.tabulated$genotype))
 
@@ -171,5 +174,8 @@ dev.off()
 #Plot distributions by genotype
 #Are they normal-ish?
 #If so, ok							
-library(lattice)								
+
 histogram( ~ t2_teeth | genotype, data=scd.data)
+
+
+sessionInfo()

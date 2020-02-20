@@ -609,3 +609,6 @@ sec_teeth_power3 <- powerSim(power_more_mag3,
     
 summary(sec_teeth_power3)
 print(sec_teeth_power3)
+
+
+sessionInfo()

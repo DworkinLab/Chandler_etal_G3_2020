@@ -1,4 +1,7 @@
 
+library(lme4)
+library(glmmTMB)
+
 
 fitness.data <- read.csv('../data/compensation_4_30.csv', na.strings="NA")
 
@@ -58,8 +61,7 @@ gen.model <- glm( cbind(scd, wt) ~ 0 + gen + offset(dummy.offset),
 summary(gen.model)
 
 #should there be a random effect of replicate in here too?
-library(lme4)
-library(glmmTMB)
+
 
 gen.model.2 <- glmer( cbind(scd, wt) ~ 
     0 + gen + ( 0 + gen| rep) + offset(dummy.offset), 

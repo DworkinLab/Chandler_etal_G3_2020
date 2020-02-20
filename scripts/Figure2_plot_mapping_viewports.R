@@ -84,3 +84,4 @@ popViewport(1)
 
 dev.off()
 
+sessionInfo()
