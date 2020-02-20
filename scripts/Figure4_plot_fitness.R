@@ -1,6 +1,7 @@
 
 library(lme4)
 library(glmmTMB)
+library(sciplot)
 
 
 fitness.data <- read.csv('../data/compensation_4_30.csv', na.strings="NA")
@@ -13,7 +14,6 @@ fitness.data$plot.col <- rep.colors[fitness.data$rep]
 
 #par(mar=c(4,4,1,1))
 
-library(sciplot)
 ci.95 <- function(x) {
 	mean.x <- mean(x)
 	se.x <- se(x)
