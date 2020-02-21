@@ -3,7 +3,7 @@
 This is repository contains all of the data and `R` scripts to reproduce the results from
 Chandler, C.H., Mammel, A. & Dworkin, I. 2020. Sexual selection does not increase the rate of compensatory adaptation to a mutation influencing a secondary sexual trait in *Drosophila melanogaster*
 
-to appear in G3, currently can be found as a pre-print on biorxiv [here](https://www.biorxiv.org/content/10.1101/686741v2).
+to appear in G3, currently can be found as a pre-print on biorxiv [here](https://www.biorxiv.org/content/10.1101/686741v3).
 
 In the data folder there are 5 `.csv` files. Details about each below.
 
