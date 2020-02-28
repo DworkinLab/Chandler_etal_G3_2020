@@ -7,7 +7,7 @@ library(plotrix)
 
 
 
-scd.data <- read.csv('../data/scd_RAL_data_final.csv', na.strings="NA")
+scd.data <- read.csv('../data/scd_RAL_data_final.csv', na.strings="NA", stringsAsFactors = TRUE)
 scd.data <- na.omit(scd.data)
 
 #Filter out the WT's from the dataset

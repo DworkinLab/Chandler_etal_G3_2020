@@ -4,7 +4,7 @@ library(glmmTMB)
 library(sciplot)
 
 
-fitness.data <- read.csv('../data/compensation_4_30.csv', na.strings="NA")
+fitness.data <- read.csv('../data/compensation_4_30.csv', na.strings="NA", stringsAsFactors = TRUE)
 
 fitness.data$prop.scd <- fitness.data$scd / (fitness.data$scd + fitness.data$wt)
 

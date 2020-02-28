@@ -10,7 +10,7 @@ options(ucscChromosomeNames=FALSE)
 
 gtrack <- GenomeAxisTrack(chromosome="X")
 
-dup.data <- read.csv("../data/plot_dup_data.csv")
+dup.data <- read.csv("../data/plot_dup_data.csv", stringsAsFactors = TRUE)
 dup.data$stock <- as.factor(dup.data$stock)
 dup.data$fill <- ifelse(dup.data$rescues=="y", "#5555AA", "#AA5555")
 

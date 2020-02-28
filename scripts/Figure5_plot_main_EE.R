@@ -33,7 +33,7 @@ text.pars <- gpar(cex=1.5, fontface="bold")
 
 #Setting up data set and sex comb teeth plots
 
-sexcomb <- read.csv("../data/sex_comb_data_uptogen24.csv", header = T)
+sexcomb <- read.csv("../data/sex_comb_data_uptogen24.csv", header = T,  stringsAsFactors = TRUE)
 
 str(sexcomb) #check that treatment is a factor, generation is an interger and change replicate to a factor
 sexcomb$rep <- factor(sexcomb$rep)
