@@ -1,8 +1,9 @@
 # Data and code for the analysis of Chandler et al. 2020 G3
 
 This is repository contains all of the data and `R` scripts to reproduce the results from
-Chandler, C.H., Mammel, A. & Dworkin, I. 2020. Sexual selection does not increase the rate of compensatory adaptation to a mutation influencing a secondary sexual trait in *Drosophila melanogaster*. G3: Genes, Genomes. 10:1541-1551
+Chandler, C.H., Mammel, A. & Dworkin, I. 2020. Sexual selection does not increase the rate of compensatory adaptation to a mutation influencing a secondary sexual trait in *Drosophila melanogaster*. G3: Genes, Genomes. 10:1541-1551.  
 doi: https://doi.org/10.1534/g3.119.400934.
+
 Link to paper [here](https://www.g3journal.org/content/10/5/1541).
 
 In the data folder there are 5 `.csv` files. Details about each below.
